@@ -40,7 +40,7 @@
         <br />
     </div>
 
-    <div class="row" id="result">
+    <div class="row" id="result" style="color:black ">
         <div class="col-lg-6" id="WordsDiv" visible="false" runat="server">
             <h2>Keywords Frequency</h2>
             <div class="container">

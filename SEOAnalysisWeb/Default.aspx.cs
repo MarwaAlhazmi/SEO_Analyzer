@@ -23,7 +23,7 @@ namespace SEOAnalysisWeb
         //[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         //public static JSONResult Analyze(bool meta, bool link, string url, string text)
         //{
-           
+
         //}
 
         protected void btnAnalyze_ServerClick(object sender, System.EventArgs e)
@@ -39,9 +39,15 @@ namespace SEOAnalysisWeb
                 else
                     analyzer = new SEOAnalyzer.WebSEOAnalyzer(url.Value, criteria);
                 var result = analyzer.Process();
-                CreateLinksTable(result);
+                if (criteria.ExternalLinks)
+                {
+                    CreateLinksTable(result);
+                }
                 CreateWordsTable(result);
-                CreateMetaTable(result);
+                if (criteria.MetaData)
+                {
+                    CreateMetaTable(result);
+                }
             }
         }
 
@@ -66,7 +72,7 @@ namespace SEOAnalysisWeb
             tableTag += "<table id=\"words\" class=\"table\"><thead><tr><th>Word</th><th>Frequency</th></tr></thead><tbody>";
             foreach (DictionaryEntry u in result.WordFrequency)
             {
-                tableTag += "<tr><td>" + u.Key + "</td><td>"+u.Value+"</td></tr>";
+                tableTag += "<tr><td>" + u.Key + "</td><td>" + u.Value + "</td></tr>";
 
             }
             tableTag += "</tbody> </table>";
