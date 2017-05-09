@@ -68,8 +68,8 @@
             </div>
         </div>
     </div>
-    <asp:HiddenField Value="" runat="server" ID="hflink" />
-    <asp:HiddenField Value="" runat="server" ID="hfmeta" /> 
+    <asp:HiddenField Value="false" runat="server" ID="hflink" />
+    <asp:HiddenField Value="false" runat="server" ID="hfmeta" /> 
     <script src="Scripts/jquery-1.10.2.js"></script>
     <script src="Scripts/jquery.dataTables.js"></script>
     <script src="Scripts/dataTables.tableTools.min.js"></script>
