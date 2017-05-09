@@ -24,11 +24,11 @@
         <div class="pull-left">
             <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-warning" runat="server" id="metabutton">
-                    <input type="checkbox" id="ckMeta" runat="server">
+                    <input type="checkbox" id="ckMeta" onchange="checkmeta()">
                     Calculate Meta tags Occurences
                 </label>
                 <label class="btn btn-warning" runat="server" id="linkbutton">
-                    <input type="checkbox" id="ckExternal" runat="server">
+                    <input type="checkbox" id="ckExternal" onchange="checklink()">
                     Number of External Links
                 </label>
             </div>

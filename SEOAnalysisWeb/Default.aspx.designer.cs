@@ -40,15 +40,6 @@ namespace SEOAnalysisWeb {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl metabutton;
         
         /// <summary>
-        /// ckMeta control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox ckMeta;
-        
-        /// <summary>
         /// linkbutton control.
         /// </summary>
         /// <remarks>
@@ -56,15 +47,6 @@ namespace SEOAnalysisWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl linkbutton;
-        
-        /// <summary>
-        /// ckExternal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox ckExternal;
         
         /// <summary>
         /// btnAnalyze control.
